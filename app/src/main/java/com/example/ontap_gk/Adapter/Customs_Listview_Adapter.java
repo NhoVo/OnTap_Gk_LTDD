@@ -71,7 +71,20 @@ public class Customs_Listview_Adapter extends BaseAdapter {
 
             }
 
-        btnAdd.setOnClickListener(new View.OnClickListener() {
+//        btnAdd.setOnClickListener(new View.OnClickListener() {
+////            @Override
+////            public void onClick(View view) {
+////                Intent in = new Intent(context, Customs_list_view_activity2.class);
+////                Bundle bundle = new Bundle();
+////                bundle.putInt("img",item.getImg());
+////                bundle.putString("names",item.getNames());
+////                bundle.putString("price",item.getPrice());
+////                in.putExtras(bundle);
+////                context.startActivity(in);
+////
+////            }
+////        });
+        convertview.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(context, Customs_list_view_activity2.class);
@@ -84,7 +97,6 @@ public class Customs_Listview_Adapter extends BaseAdapter {
 
             }
         });
-
         return convertview;
     }
 }
